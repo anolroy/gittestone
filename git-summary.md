@@ -41,3 +41,23 @@ git pull origin main
 git merge development  
 git push origin main  
 ```
+I have now changes readme.md document in main branch. How shall we sync now??
+Ans:
+
+git checkout main
+git pull origin main
+
+git checkout development
+git pull origin development  # Update local development
+git merge main
+
+git push origin development
+For dev-1
+git checkout dev-1
+git merge main
+git push origin dev-1
+
+# For dev-2
+git checkout dev-2
+git merge main
+git push origin dev-2
