@@ -13,3 +13,23 @@
 `git log` _To see the commits with details_
 
 `git log -2` _To see last 2 commits_
+
+One flow
+
+git checkout development
+git checkout -b dev-2
+//now make change in code
+
+git add .
+git commit -m "Your update message"
+git push origin dev-2
+
+git checkout development
+git pull origin development  # Make sure it's up to date
+git merge dev-2
+git push origin development
+
+git checkout main
+git pull origin main
+git merge development
+git push origin main
