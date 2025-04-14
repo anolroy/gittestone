@@ -16,15 +16,15 @@
 
 One flow
 
-git checkout development
-git checkout -b dev-2
-//now make change in code
+git checkout development _
+git checkout -b dev-2  _
+//now make change in code  _
 
-git add .
-git commit -m "Your update message"
-git push origin dev-2
+git add . _
+git commit -m "Your update message"  _
+git push origin dev-2 _
 
-git checkout development
+git checkout development _
 git pull origin development  # Make sure it's up to date
 git merge dev-2
 git push origin development
