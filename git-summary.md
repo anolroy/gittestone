@@ -16,20 +16,28 @@
 
 One flow
 
-git checkout development _
-git checkout -b dev-2  _
+`git checkout -b dev-2` _To create and switch to a new branch named dev-2_
+
 //now make change in code  _
 
-git add . _
-git commit -m "Your update message"  _
-git push origin dev-2 _
+`git add .` _To add any changed or untracked file into stage._
 
-git checkout development _
-git pull origin development  # Make sure it's up to date
-git merge dev-2
-git push origin development
+`git commit -m "Your update message"` _Commit the staged files with a message._
 
-git checkout main
-git pull origin main
-git merge development
-git push origin main
+`git push origin dev-2` _Push the changes to the remote branch dev-2._
+
+```
+git add .  
+git commit -m "Your update message"  
+git push origin dev-2  
+
+git checkout development  
+git pull origin development  # Make sure it's up to date  
+git merge dev-2  
+git push origin development  
+
+git checkout main  
+git pull origin main  
+git merge development  
+git push origin main  
+```
